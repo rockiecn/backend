@@ -56,7 +56,7 @@ func main() {
 	}
 
 	// create map structure
-	reAccMap := make(map[common.Hash][]eventStruct)
+	reAccMap := make(map[common.Hash][]events.reAccEvent)
 
 	// scan each log
 	fmt.Println("Travelling logs..")
