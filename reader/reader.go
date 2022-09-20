@@ -58,9 +58,11 @@ func (reader *Reader) FilterBlock(block *big.Int, contractAddr string) error {
 	query := ethereum.FilterQuery{
 		FromBlock: block,
 		ToBlock:   block.Add(block, big.NewInt(1)),
-		Addresses: []common.Address{
-			common.HexToAddress(contractAddr),
-		},
+		// Addresses: []common.Address{
+		// 	common.HexToAddress(contractAddr),
+		// },
+
+		Addresses: []common.Address{},
 	}
 
 	// filter logs with contract address and block number

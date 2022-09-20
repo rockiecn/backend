@@ -19,7 +19,8 @@ func main() {
 	// scan blocks
 	err = p.FilterBlock(
 		big.NewInt(3104474),
-		"0xC6fE0358b6d8Cb064a0a7db15dbdb7D80F02bD4E")
+		//"0xC6fE0358b6d8Cb064a0a7db15dbdb7D80F02bD4E"
+		"")
 	if err != nil {
 		log.Fatal(err)
 	}
